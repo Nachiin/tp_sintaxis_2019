@@ -1,0 +1,22 @@
+int var01=123123, var02= 047, var03=0x4AF34;
+float i_love_you=3000;
+char letra='y';
+if(var01 == var02)
+        return i_love_you;
+if(2 && 3  || 4 && 5 || 6 )
+        double nachin = 99;
+while(a = b = c = 2)
+        return letra;
+if(a>3 && b< a+1)
+            {22;int lerolero=35;}
+
+do 22;while(3);
+do {
+        char exito= 'I';
+        return exito;
+    } while(avengers > joker);
+    
+if (a<b)
+    a++;
+    else a--;
+     
