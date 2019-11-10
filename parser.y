@@ -1,6 +1,6 @@
 %code top{
 #include <stdio.h>
-#define YYERROR_VERBOSE			/*definicion de la macro para que bison facilite una cadena de mensajes de error amplias*/
+#define YYERROR_VERBOSE			
 }
 
 %code provides{
@@ -12,8 +12,7 @@ void yyerror(const char *);
 }
 
 
-%define parse.error verbose /*Dice de forma clara cuáles son los errores encontrados*/
-
+%define parse.error verbose 
 
 %token OPER_SUMA_IGUAL OPER_RESTA_IGUAL OPER_MULTI_IGUAL OPER_DIV_IGUAL OPER_OR OPER_AND OPER_IGUALDAD OPER_DESIGUALDAD OPER_MAY_IGUAL OPER_MEN_IGUAL OPER_INCREMENTO  OPER_DECREMENTO  CONSTANTE LITERAL_CADENA TIPO_DATO CARACTER IDENTIFICADOR IF ELSE SWITCH WHILE DO FOR RETURN SIZEOF
 
@@ -180,7 +179,6 @@ int main()
 	return 0;
 }
 
-/* Informa la ocurrencia de un error. */
 void yyerror(const char *msg_error){
 	printf("\n\n***línea #%d: %s\n", yylineno, msg_error);
 }
